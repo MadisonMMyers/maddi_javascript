@@ -60,8 +60,8 @@
     console.log(try01);
 
     //Functions on my own 
-    function makeName(first, middle, last) {
-      let newName = first + ' ' + middle + ' ' + last;
+    function makeName(firstname, middlename, lastname) {
+      let newName = firstname + ' ' + middlename + ' ' + lastname;
       return newName;
     };
 
@@ -73,6 +73,36 @@
 
     let name3 = makeName('Joushua', 'Michael', 'Chavez');
     console.log(name3);
+
+    //Flow Control
+    console.log("Making a better name function");
+
+    function makeBetterName(firstname, middlename, lastname) {
+      if (middlename.length === 1) {
+        middlename = middlename + ".";
+      }
+      let fullName = firstname + " " + middlename + " " + lastname;
+      return fullName;
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("Joshua", "M", "Chavez"))
+
+    //Using else and If else
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+    if (home > away) {
+      return "Home team wins!";
+    } else if(home === away) {
+      return "It was a tie"
+    } else {
+      return "Away team wins :("
+    }
+  }
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(3,3));
+
 
   </script>
 </body>
