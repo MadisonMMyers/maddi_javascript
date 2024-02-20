@@ -11,10 +11,13 @@
   <script>
     //your code will go here
     console.log("Let's do math:");
+
     let x = 5;
     console.log(x);
+    
     let y = 3;
     console.log(y);
+
     let z = x * y;
     console.log(z);
 
@@ -47,19 +50,30 @@
     //js Functions
     console.log("Using functions.");
 
-    //function to make sqaure numbers !!! also fix this.. Make sure you understand it 
+    //function to make sqaure numbers 
     function makeSquare(theNumb) {
       let squared = theNumb * theNumb;
       return squared;
     }
-    console.log(makeSquare(4));
-    console.log(makeSquare(3));
 
-    //Functions on my own !!!!! fix this later 
-    function nameGen(firstname, middlename, lastname) {
-      let name1 = firstname * middlename * lastname
-    }
-    nameGen('Madison','Marie','Myers')
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    //Functions on my own 
+    function makeName(first, middle, last) {
+      let newName = first + ' ' + middle + ' ' + last;
+      return newName;
+    };
+
+    let name1 = makeName('Madison', 'Marie', 'Myers');
+    console.log(name1);
+
+    let name2 = makeName("Robert", "\"Beto\"", "O’Rourke");
+    console.log(name2);
+
+    let name3 = makeName('Joushua', 'Michael', 'Chavez');
+    console.log(name3);
+
   </script>
 </body>
 </html>
